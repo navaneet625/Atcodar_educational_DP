@@ -4,6 +4,8 @@ using namespace std;
 const int N = 100005;
 int dp[N];
 int n, k;
+
+//top down approach
 int solve(vector<int>&h, int n) {
 	if (n == 0 or n == 1)
 		return dp[n] = 0;
@@ -20,7 +22,6 @@ int solve(vector<int>&h, int n) {
 	return dp[n] = min_val;
 }
 
-
 signed main() {
 
 	cin >> n >> k;
@@ -31,6 +32,9 @@ signed main() {
 	}
 	// memset(dp, -1, sizeof(dp));
 	// cout << solve(h, n) << "\n";
+	
+	
+	//bottom up approach
 
 	dp[0] = 0;
 	dp[1] = 0;
