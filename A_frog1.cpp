@@ -3,6 +3,7 @@ using namespace std;
 const int N = 100005;
 int dp[N];
 
+//top-down approach
 int solve(int n, vector<int>&h) {
 	if (n == 1)
 		return 0;
@@ -25,6 +26,8 @@ int main() {
 	}
 	// memset(dp, -1, sizeof(dp));
 	// cout << solve(n, arr) << "\n";
+	
+	//bottom-up approach
 	dp[0] = 0;
 	dp[1] = 0;
 	dp[2] = abs(arr[0] - arr[1]);
