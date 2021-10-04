@@ -3,4 +3,6 @@
 
 ## DP problem covering all dp concept
 https://atcoder.jp/contests/dp
-** imp   E,J
+
+
+/* important que E(knapsack type 2),J,M(optimization) */
